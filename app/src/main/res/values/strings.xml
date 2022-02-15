@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Assignment_8</string>
+    <string name="notify_while_in_charge_mode">Notify while in charge mode</string>
+    <string name="notify_when_battery_is_low">Notify when battery is low</string>
+    <string name="notify_when_network_state_change">Notify when network state change</string>
+    <string name="notify_on_gps_enable_disable">Notify on GPS enable/disable</string>
+    <string name="notify_when_device_is_idle">Notify when device is idle</string>
+    <string name="set_alarm_on_predefined_time">Set alarm on predefined time</string>
+    <string name="set_alarm_after_certain_amount_of_time">Set alarm repeating time</string>
+    <string name="seconds">Sec</string>
+    <string name="charge_status">Charging Status</string>
+    <string name="charge_msg_on">On</string>
+    <string name="charge_msg_off">Off</string>
+    <string name="charge_longText_on">Your device charging is on , please check if fully charged then plug-out adapter.</string>
+    <string name="charge_longText_off">Your device charging is off , please check if battery running out  then plug-in adapter.</string>
+
+    <string name="battery_status">Battery status</string>
+    <string name="battery_msg_low">Your device  battery is low please charge it</string>
+    <string name="battery_longText_low">Battery is running out if you will not connect to adapter to change battery device may switch off.</string>
+    <string name="battery_msg_okay">Battery status is okay</string>
+    <string name="battery_longText_okay">Your device battery is okay enjoy your work on device.</string>
+    <string name="wifi_status">Wifi-enabled</string>
+    <string name="wifi_on_msg">Wifi-network connection is enabled</string>
+    <string name="wifi_on_longText">Your device is connected to wifi-network connection , please check your not using un-safe connection.</string>
+    <string name="mobile_data_on_status">Mobile data enabled</string>
+    <string name="mobile_data_on_msg">Mobile-network connection is enabled</string>
+    <string name="mobile_data_on_longText">Your device is connected to mobile-network connection , hope your net speed is good.</string>
+    <string name="net_off_status">Internet connection is off</string>
+    <string name="net_off_msg">Please enable internet if you wish to use</string>
+    <string name="net_off_longText">Your device is not connected to internet connection , you are unable to use any kind of network service , please enabled to internet to use it.</string>
+    <string name="gps_enable_status">Location on</string>
+    <string name="gps_on_msg">GPS service is Enabled</string>
+    <string name="gps_on_longText">Use Google Location Services to improve location accuracy. This can estimate your phone\'s location more slowly and use more battery.</string>
+    <string name="gps_off">Location off</string>
+    <string name="gps_off_msg">GPS service is disabled</string>
+    <string name="gps_off_longText">GPS connection option is disabled in your device to use location please enabled it.</string>
+    <string name="non_idle_state">Non-idle state </string>
+    <string name="non_idle_msg">Mobile is on non-idle(active) state</string>
+    <string name="non_idle_longText">Your device is not in idle mode , And screen is turned-on , as you are doing some operations.</string>
+    <string name="idle_state">Idle Mode</string>
+    <string name="idle_state_msg">Your device is in idle mode</string>
+    <string name="idle_state_longText">Your device is in idle mode , And screen is turned-off , as you are not doing any operations.</string>
+    <string name="SetTime">Set time</string>
+    <string name="predefine_alarm">Predefine Alarm </string>
+    <string name="specific_alarm_msg">Alarm set at specific time </string>
+    <string name="specific_alarm_longText">Notification at set time popup , please check description.</string>
+    <string name="r_time_title">Repeating Alarm </string>
+    <string name="r_time_msg">Alarm set on given repeating time </string>
+    <string name="r_time_longText">Notification at set time popup after set repeating time.</string>
+    <string name="notify_icon">Notify icon</string>
+    <string name="set_time">Set Time</string>
+    <string name="notification">All Notification</string>
+    <string name="alarm_time_is">Alarm time is </string>
+    <string name="Set_specific_time">Set specific time</string>
+    <string name="set_default_time">0</string>
+
+</resources>

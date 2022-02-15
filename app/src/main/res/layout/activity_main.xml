@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/linearLayout">
+
+            <TextView
+                style="@style/textView"
+                android:text="@string/notify_while_in_charge_mode" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchCharge"
+                style="@style/switchStyle"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayout">
+
+            <TextView
+                style="@style/textView"
+                android:text="@string/notify_when_battery_is_low" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchBatteryLow"
+                style="@style/switchStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayout">
+
+            <TextView
+                style="@style/textView"
+                android:text="@string/notify_when_network_state_change" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchNetwork"
+                style="@style/switchStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayout">
+
+            <TextView
+                style="@style/textView"
+                android:text="@string/notify_on_gps_enable_disable" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchGps"
+                style="@style/switchStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayout">
+
+            <TextView
+                style="@style/textView"
+                android:text="@string/notify_when_device_is_idle" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchIdle"
+                style="@style/switchStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayout">
+
+            <EditText
+                android:id="@+id/etAlarm"
+                style="@style/etStyle"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:autofillHints="@string/set_time"
+                android:focusable="false"
+                android:hint="@string/set_alarm_on_predefined_time"
+                android:inputType="none" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchAlarm"
+                style="@style/switchStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            style="@style/linearLayout"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+
+                android:id="@+id/etRepeatingTime"
+                style="@style/etStyle"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:autofillHints="@string/set_time"
+                android:hint="@string/set_alarm_after_certain_amount_of_time"
+                android:inputType="number" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/seconds"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchRepeatTime"
+                style="@style/switchStyle" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
