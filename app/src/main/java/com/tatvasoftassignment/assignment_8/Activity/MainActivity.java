@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                         int RepeatTime = Integer.parseInt(binding.etRepeatingTime.getText().toString());
                         Intent intent = new Intent(MainActivity.this, RepeatTimeReceiver.class);
                         pd = PendingIntent.getBroadcast(MainActivity.this, 0, intent, 0);
-                        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), (RepeatTime * 1000L), pd);
+                        alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+ (RepeatTime * 1000L), pd);
                     } else {
                         Toast.makeText(MainActivity.this, getString(R.string.SetTime), Toast.LENGTH_SHORT).show();
                         binding.switchRepeatTime.setChecked(false);
