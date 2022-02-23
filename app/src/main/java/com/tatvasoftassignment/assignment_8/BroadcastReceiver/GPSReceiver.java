@@ -28,7 +28,7 @@ public class GPSReceiver extends BroadcastReceiver {
             msg = context.getString(R.string.gps_off_msg);
             longText = context.getString(R.string.gps_off_longText);
         }
-        MainActivity.createNotification(context, smallIcon, title, msg, longText, 3, NotifyDescriptionActivity.class);
+        MainActivity.createNotification(context, smallIcon, title, msg, longText, 3,3, NotifyDescriptionActivity.class);
     }
 
 }

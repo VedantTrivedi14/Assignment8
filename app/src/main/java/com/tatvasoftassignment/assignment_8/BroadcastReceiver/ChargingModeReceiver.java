@@ -27,7 +27,7 @@ public class ChargingModeReceiver extends BroadcastReceiver {
             msg = context.getString(R.string.charge_msg_off);
             longText = context.getString(R.string.charge_longText_off);
         }
-        MainActivity.createNotification(context, R.drawable.ic_baseline_battery_charging_full_24, title, msg, longText, 2, NotifyDescriptionActivity.class);
+        MainActivity.createNotification(context, R.drawable.ic_baseline_battery_charging_full_24, title, msg, longText, 2,2, NotifyDescriptionActivity.class);
     }
 
 }

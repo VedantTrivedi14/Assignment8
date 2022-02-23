@@ -16,7 +16,7 @@ public class SpecificAlarmReceiver extends BroadcastReceiver {
                 R.drawable.ic_baseline_alarm_24,
                 context.getString(R.string.predefine_alarm),
                 context.getString(R.string.specific_alarm_msg),
-                context.getString(R.string.specific_alarm_longText), 7,
+                context.getString(R.string.specific_alarm_longText), 7,7,
                 NotifyDescriptionActivity.class);
     }
 }

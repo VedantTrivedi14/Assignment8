@@ -29,6 +29,6 @@ public class BatteryStateReceiver extends BroadcastReceiver {
             longText = context.getString(R.string.battery_longText_okay);
         }
 
-        MainActivity.createNotification(context, smallIcon, title, msg, longText, 1, NotifyDescriptionActivity.class);
+        MainActivity.createNotification(context, smallIcon, title, msg, longText, 1, 1,NotifyDescriptionActivity.class);
     }
 }

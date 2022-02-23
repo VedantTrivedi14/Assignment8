@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                         int RepeatTime = Integer.parseInt(binding.etRepeatingTime.getText().toString());
                         Intent intent = new Intent(MainActivity.this, RepeatTimeReceiver.class);
                         pd = PendingIntent.getBroadcast(MainActivity.this, 0, intent, 0);
-                        alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+ (RepeatTime * 1000L), pd);
+                        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), (RepeatTime * 1000L), pd);
                     } else {
                         Toast.makeText(MainActivity.this, getString(R.string.SetTime), Toast.LENGTH_SHORT).show();
                         binding.switchRepeatTime.setChecked(false);
@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public static void createNotification(Context context, int smallIcon, String
-            title, String text, String longText, int id, Class activity) {
+            title, String text, String longText, int id,int reqCode, Class activity) {
         NotificationManagerCompat mNotify = NotificationManagerCompat.from(context);
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(Constants.ID, context.getString(R.string.notification), NotificationManager.IMPORTANCE_HIGH);
@@ -205,12 +205,12 @@ public class MainActivity extends AppCompatActivity {
         builder.setPriority(NotificationCompat.PRIORITY_HIGH);
 
         Intent intent = new Intent(context, activity);
-        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         intent.putExtra(Constants.NOTIFICATION_ICON, smallIcon);
         intent.putExtra(Constants.NOTIFICATION_TITLE, title);
         intent.putExtra(Constants.NOTIFICATION_MSG_TEXT, text);
         intent.putExtra(Constants.NOTIFICATION_LONG_TEXT, longText);
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, reqCode,intent, PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(pendingIntent);
         builder.setAutoCancel(true);
         mNotify.notify(id, builder.build());

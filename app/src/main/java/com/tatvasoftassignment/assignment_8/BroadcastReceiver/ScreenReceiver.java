@@ -27,7 +27,7 @@ public class ScreenReceiver extends BroadcastReceiver {
             longText = context.getString(R.string.idle_state_longText);
 
         }
-        MainActivity.createNotification(context, smallIcon, title, msg, longText, 6, NotifyDescriptionActivity.class);
+        MainActivity.createNotification(context, smallIcon, title, msg, longText, 6, 6,NotifyDescriptionActivity.class);
     }
 
 }

@@ -17,7 +17,7 @@ public class RepeatTimeReceiver extends BroadcastReceiver {
                 R.drawable.ic_baseline_alarm_24,
                 context.getString(R.string.r_time_title),
                 context.getString(R.string.r_time_msg),
-                context.getString(R.string.r_time_longText), 5,
+                context.getString(R.string.r_time_longText), 5,5,
                 NotifyDescriptionActivity.class);
     }
 }

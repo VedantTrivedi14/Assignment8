@@ -37,7 +37,7 @@ public class NetworkChangeReceiver extends BroadcastReceiver {
             msg = context.getString(R.string.net_off_msg);
             longText = context.getString(R.string.net_off_longText);
         }
-        MainActivity.createNotification(context, smallIcon, title, msg, longText, 4, NotifyDescriptionActivity.class);
+        MainActivity.createNotification(context, smallIcon, title, msg, longText, 4,4, NotifyDescriptionActivity.class);
     }
 
 }
