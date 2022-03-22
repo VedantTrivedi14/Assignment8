@@ -8,15 +8,14 @@
     </style>
 
     <style name="switchStyle">
-        <item name="android:layout_width">@dimen/layout_width</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/minHeight</item>
+
     </style>
 
     <style name="textView">
-        <item name="android:layout_width">@dimen/layout_width</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/minHeight</item>
         <item name="android:layout_marginBottom">@dimen/margin</item>
         <item name="android:padding">@dimen/padding</item>
         <item name="android:textSize">@dimen/textSize</item>
@@ -25,7 +24,6 @@
 
     <style name="etStyle">
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">@dimen/padding</item>
         <item name="android:layout_marginBottom">@dimen/margin</item>
         <item name="android:minHeight">@dimen/minHeight</item>
         <item name="android:textColorHint">@color/black</item>

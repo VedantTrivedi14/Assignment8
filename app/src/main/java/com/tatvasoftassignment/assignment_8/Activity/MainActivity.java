@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Constants.NOTIFICATION_TITLE, title);
         intent.putExtra(Constants.NOTIFICATION_MSG_TEXT, text);
         intent.putExtra(Constants.NOTIFICATION_LONG_TEXT, longText);
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, reqCode,intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, reqCode,intent, PendingIntent.FLAG_MUTABLE);
         builder.setContentIntent(pendingIntent);
         builder.setAutoCancel(true);
         mNotify.notify(id, builder.build());
